@@ -1,0 +1,5 @@
+ cmake_minimum_required(VERSION 3.3)
+ project(exe)
+ find_package(Qt6 REQUIRED COMPONENTS Widgets)
+ add_executable(exe main.cpp)
+ target_link_libraries(exe PRIVATE Qt6::Widgets)
